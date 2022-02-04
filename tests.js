@@ -40,3 +40,18 @@ describe('sayHello', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
 });
+
+describe('isFive', function() {
+    it('should return a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return boolean when called', function() {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return "true" when passed 5', function() {
+        expect(typeof isFive(5)).toBe('boolean');
+    });
+    it('should return "true" when passed "5"', function() {
+        expect(typeof isFive("5")).toBe('boolean');
+    });
+});
