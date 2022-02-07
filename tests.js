@@ -127,7 +127,7 @@ describe('isVowel', function() {
 
 describe('add', function() {
     it('should always be a defined function', function() {
-        expect(typeof add).toBe('function')
+        expect(typeof add).toBe('function');
     });
     it('should always return 5 when passed 2, 3', function() {
         expect(add(2,3)).toBe(5);
