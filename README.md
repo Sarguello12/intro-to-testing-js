@@ -1,4 +1,4 @@
-# Intro to Testing in JS
+    # Intro to Testing in JS
 
 ## Summary
 This is an introduction to automated testing in JavaScript. The idea behind automated testing is to provide immediate feedback on the code you write to solve a problem, add a feature, or fix a bug. The feedback from the tests comes in the form of green passing tests or red failing tests. Tests are functions that test functions to compare the results of the actual output vs. the expected output.

@@ -27,3 +27,14 @@ function isEven(num) {
     }
 }
 
+function isVowel(input) {
+    if (/^[aeiouAEIOU]$/.test(input)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function add() {
+
+}
