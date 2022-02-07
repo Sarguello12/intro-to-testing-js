@@ -1,4 +1,6 @@
-// helloWorld function 
+// helloWorld function
+"use strict";
+
 function helloWorld() {
     return "Hello, World!";
 }
@@ -14,3 +16,14 @@ function sayHello(input) {
 function isFive(num) {
     return num == 5;
 }
+
+function isEven(num) {
+    if(num === false) {
+        return false;
+    } else if (num % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
