@@ -36,6 +36,12 @@ function isVowel(input) {
 }
 
 function add(num1, num2) {
-    let result = parseInt(num1) + parseInt(num2);
-        return result;
+    let parsedNums = parseInt(num1) + parseInt(num2);
+    if (parsedNums === NaN) {
+        return NaN;
+    } else {
+        return parsedNums;
+    }
 }
+
+console.log(add("banana", "split"));
