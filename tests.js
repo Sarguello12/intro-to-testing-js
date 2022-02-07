@@ -93,40 +93,55 @@ describe('isEven', function() {
 });
 
 describe('isVowel', function() {
-    it('should always be a defined function', function () {
+    it('should always be a defined function', function() {
         expect(typeof isVowel).toBe('function');
     });
-    it('should always return a boolean when called', function () {
+    it('should always return a boolean when called', function() {
         expect(typeof isVowel()).toBe('boolean');
     });
-    it('should always return true when passed "a"', function () {
+    it('should always return true when passed "a"', function() {
         expect(isVowel("a")).toBeTruthy();
     });
-    it('should always return true when passed "A"', function () {
+    it('should always return true when passed "A"', function() {
         expect(isVowel("A")).toBeTruthy();
     });
-    it('should always return false when passed "y"', function () {
+    it('should always return false when passed "y"', function() {
         expect(isVowel("y")).toBeFalsy();
     });
-    it('should always return false when passed 4', function () {
+    it('should always return false when passed 4', function() {
         expect(isVowel(4)).toBeFalsy();
     });
-    it('should always return false when passed true', function () {
+    it('should always return false when passed true', function() {
         expect(isVowel(true)).toBeFalsy();
     });
-    it('should always return false when passed false', function () {
+    it('should always return false when passed false', function() {
         expect(isVowel(false)).toBeFalsy();
     });
-    it('should always return false when passed "banana"', function () {
+    it('should always return false when passed "banana"', function() {
         expect(isVowel("banana")).toBeFalsy();
     });
-    it('should always return false when argument is left empty', function () {
+    it('should always return false when argument is left empty', function() {
         expect(isVowel()).toBeFalsy();
     });
 });
 
 describe('add', function() {
-    it('should always be a defined function', function () {
+    it('should always be a defined function', function() {
         expect(typeof add).toBe('function')
+    });
+    it('should always return 5 when passed 2, 3', function() {
+        expect(add(2,3)).toBe(5);
+    });
+    it('should always return -12 when passed -3, -9', function() {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('should always return 11 when passed "5", 6', function() {
+        expect(add("5",6)).toBe(11);
+    });
+    it('should always return 6 when passed "-4", "10"', function() {
+        expect(add("-4","10")).toBe(6);
+    });
+    it('should always return NaN when passed "banana", "split"', function() {
+        expect(add("banana","split")).toBe(NaN);
     });
 });
